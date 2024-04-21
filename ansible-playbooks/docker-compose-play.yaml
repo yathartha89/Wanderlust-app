@@ -1,0 +1,13 @@
+- name: Automating with docker-compose
+  hosts: all
+  become: yes
+  tasks:
+    - name: Automating containers with docker-compose
+      command: docker-compose up -d
+      args:
+        chdir: /home/vijay_narula1950/Wanderlust-app
+    - name: Download docker-compose
+      apt:
+        name: docker-compose
+        state: latest
+        
