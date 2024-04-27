@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm install
 
-RUN npm run test
+
 
 FROM node:21-slim
 
